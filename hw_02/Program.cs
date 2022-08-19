@@ -1,7 +1,7 @@
-﻿Console.WriteLine("Введите N: ");
-int n = int.Parse(Console.ReadLine());
-Console.WriteLine("Введите M: ");
+﻿Console.WriteLine("Введите M: ");
 int m = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите N: ");
+int n = int.Parse(Console.ReadLine());
 
 int ShowSum(int start, int end, int sum)
 {
@@ -18,4 +18,4 @@ int ShowSum(int start, int end, int sum)
     }
 }
 
-Console.WriteLine(ShowSum(n, m, 0));
+Console.WriteLine(ShowSum(m, n, 0));
