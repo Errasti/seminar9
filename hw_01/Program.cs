@@ -5,7 +5,7 @@ int n = int.Parse(Console.ReadLine());
 
 void ShowSequence(int start, int end)
 {
-    if ( start > end )
+    if (start > end)
     {
         return;
     }
@@ -13,8 +13,8 @@ void ShowSequence(int start, int end)
     {
         Console.Write(start + " ");
         start++;
-        ShowSequence(start,end);
+        ShowSequence(start, end);
     }
 }
 
-ShowSequence(m,n);
+ShowSequence(m, n);
