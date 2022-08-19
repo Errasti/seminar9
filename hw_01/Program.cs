@@ -1,7 +1,7 @@
-﻿Console.WriteLine("Введите N: ");
-int n = int.Parse(Console.ReadLine());
-Console.WriteLine("Введите M: ");
+﻿Console.WriteLine("Введите M: ");
 int m = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите N: ");
+int n = int.Parse(Console.ReadLine());
 
 void ShowSequence(int start, int end)
 {
@@ -17,4 +17,4 @@ void ShowSequence(int start, int end)
     }
 }
 
-ShowSequence(n,m);
+ShowSequence(m,n);
