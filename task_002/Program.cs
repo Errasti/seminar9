@@ -1,17 +1,12 @@
 ﻿Console.WriteLine("Введите N: ");
 int n = int.Parse(Console.ReadLine());
 
-void ShowSequence(int start)
+string ShowSequence(int start, string res)
 {
     if ( start <= 0 )
     {
-        return;
+        return res;
     }
-    else
-    {
-    Console.Write(start + " ");
-    start--;
-    ShowSequence(start);
-    }
+    return ( $"{start} \t {ShowSequence(--start, res)} ");
 }   
-ShowSequence(n);
+Console.Write(ShowSequence(n," "));
